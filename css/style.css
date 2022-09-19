@@ -1,0 +1,293 @@
+	@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&family=Hepta+Slab:wght@300&family=Montserrat:wght@300&family=Open+Sans:wght@300&family=Raleway:wght@400;500;800&display=swap');
+
+	*{
+		margin: 0px;
+		padding: 0px;
+		/*font-family: "Roboto", sans-serif;*/
+		font-family: 'Raleway', sans-serif;
+		box-sizing: border-box;		
+	}
+
+	a{
+		text-decoration: none;
+	}
+
+	h2{
+		font-size: 25px;
+		margin: 5px;
+		color: darkred;	
+	}
+
+	h3{
+		font-weight: bold;
+		color: darkred;		
+		padding: 5px;
+		font-size: 18px;
+	}
+
+	h4{
+		color: #2980B9;
+		font-size: 16px;
+		margin: 5px;
+	}
+
+	h5{
+		color: black;
+		font-size: 15px;
+		margin: 5px;
+	}
+
+	span, p, b{
+		font-size: 15px;
+		margin: 3px 5px;
+	}
+
+	ul{
+		list-style: none;
+	}
+
+	textarea{
+		padding: 5px 10px;
+		height: 150px !important;
+	}
+
+	input[type='file']{
+		background-color: #FA9C1B;
+		color: white;
+		padding: 5px 10px;
+		border-radius: 5px;
+		width: 100%;
+		height: 30px;
+		margin-bottom: 10px;
+	}
+
+	input[type='file']:hover{
+		background-color: darkorange;
+	}
+
+	input[type="text"]{
+		width: 100%;
+		height: 30px;
+		border-radius:3px;
+		border-style: hidden;
+		box-shadow: inset 0 1px 2px rgb(0 0 0 / 30%);
+		font-size: 15px;
+		margin-bottom: 10px;
+		padding:5px 10px;
+	}
+
+	input:focus{
+		outline: none;
+	}
+
+	button:hover{
+		cursor: pointer;
+	}
+
+	select > option{
+		font-size: 15px;
+	}
+
+	/* SWITCH*/
+	.switch{ 
+		display: block; /* Xác định kiểu hiển thị có dạng là block */ 
+		position: relative; /* Xác định vị trí của phần tử là tuyệt đối */ 
+		width: 35px; 
+		height: 15px; 
+		margin: auto; /* Phần tử cách lề trên 50px và căn giữa 2 bên */ 
+	}
+
+	.switch > input[type = "checkbox"]{
+		display: none; 
+	}
+
+	.bg-switch{ 
+		display: block; 
+		position: absolute; /* Xác định vị trí của phần tử là tuyệt đối so với phần tử bao ngoài */ 
+		width: 100%; 
+		height: 100%; 
+		background-color: white; 
+		border-radius: 30px; /* Xác định độ bo cong góc của phần tử */ 
+		transition: 0.25s; /* Xác khoảng thời gian để phần tử biến đổi trạng thái */ 
+		border: 1px solid #eeeeee; /* Xác định đồ dầy viền là 2px, có kiểu nét liền và có màu #eeeeee*/ 
+	}
+
+	.mask-switch{ 
+		display: block; 
+		position: absolute; 
+		width: 14px; 
+		height: 14px; 
+		background-color: white; 
+		box-shadow: 1px 1px 3px silver; 
+		border-radius: 50%; /* Bo cong các góc để phần từ chuyển từ hình vuông sang hình tròn */ 
+		left: 1px; /* Cách lề trái của phần tử container 2px */ 
+		top: 1px; /* Cách lề trên của phần tử container 2px */ 
+		transition: 0.25s; 
+		cursor: pointer; /* Xác định kiểu hiển thị của con trỏ chuột khi rê con trỏ chuột vào phần tử là pointer */ 
+	}
+
+	.switch > input[type = "checkbox"]:checked + .bg-switch{
+	  background-color: #4cd964;
+
+	}
+
+	.switch > input[type = "checkbox"]:checked ~ .mask-switch {
+	  left: 21px;
+	  top: 0.5px;
+	}
+
+/* ACTIVE*/
+
+	.show{
+		display: block;
+	}
+
+
+/*BLOCK*/
+	.block{
+	    height: auto;
+	    border-radius: 5px;
+	    box-shadow: 0 0 5px rgb(0 0 0 / 20%);
+	    background-color: white;
+	    overflow: hidden;
+	    margin: 30px;
+	}
+
+	.line-menu{
+		max-width: 100% !important;
+		max-height: 30px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	
+	}
+
+	.bbg {
+	  background-color: #f1f1f1;
+	  border-radius: 5px;
+	  margin: 5px;
+	  padding: 5px 20px;
+	}
+
+	div.container{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+	}
+
+/*FORM*/
+	.form-student{
+		padding: 5px 20px 5px 20px;
+	}
+
+	.content-form{
+		display: block;
+	}
+
+	.set-form{
+		max-width: 350px;
+	}
+	
+	.fffad{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+/* BUTTON */
+	.login-button{
+		border-radius: 5px;
+		font-weight: bold;
+		border: none;
+		padding: 2px 5px;
+		margin: 8px 0;
+		width: 100%;
+		height: 30px;
+		background-color: #f01e1e;
+		box-shadow: 0 0 5px rgb(0 0 0 / 60%);		
+	}
+
+	.btn{
+		box-shadow: 0 1px 3px rgb(06, 66, 205);
+		color: white;
+		font-weight: bold;
+		text-align: center;
+		background-color: #0642cd;
+		border-style: hidden;
+		border-radius: 3px;
+	}
+
+	.btn:hover{
+		background-color: #072F5F;
+	}
+
+	.enter-btn{
+		width: auto;
+		height: 25px;
+		padding: 2px 5px;
+		margin: 7px 10px;
+	}
+
+	/*CLOSE*/
+	.cbtn{
+		width: 14px; 
+		height: 14px; 
+		background-color: #FF4F1F; 
+		border-style: hidden;
+		box-shadow: 1px 1px 3px silver; 
+		border-radius: 50%;
+	}
+
+	.obtn{
+		width: 14px; 
+		height: 14px; 
+		background-color: #03C04A; 
+		border-style: hidden;
+		box-shadow: 1px 1px 3px silver; 
+		border-radius: 50%;
+	}
+
+
+
+/* FOOTER */
+	.footer-page{
+		margin-top: 100px;
+		overflow: hidden;
+	}
+	.footer-top{
+		background-color: #212121;
+		width: 100%;
+		height: auto;
+		display: flex;
+		padding: 10px 200px;
+		justify-content: space-between;
+	}
+	.footer-left{
+		padding: 10px;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		
+	}
+	.footer-right > h4{
+		margin: 5px 0;
+		color: white;
+	}
+	.footer_ul_logo li{
+		float: left;
+		list-style: none;
+		padding: 0 10px;
+	}
+
+	.footer-info > p{
+		color: white;
+		margin-left: 20px;
+		padding-top: 4px;
+		flex-wrap: nowrap;
+	}
+
+	.footer-bottom{
+		width: 100%;
+		background-color: black;
+		height: 20px;
+	}
